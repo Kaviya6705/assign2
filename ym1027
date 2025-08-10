@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       
+        Scanner sc = new Scanner(System.in);
+        int dis=sc.nextInt();
+        int speed=sc.nextInt();
+        Float conf=sc.nextFloat();
+        Float cur=sc.nextFloat();
+        int time=dis/speed;
+        Float tem=cur+time;
+        if(conf>=cur)
+        {
+            if(conf>=tem)
+            {
+                System.out.println("Yes");
+            }
+            else
+            {
+                System.out.println("No");
+            }
+        }
+    }
+}
+        
